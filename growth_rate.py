@@ -24,7 +24,7 @@ def GrowthRate(state):
     print "Current Doubling Time: %f"%(dtime[len(dtime)-1])
     xaxis=[x for x in xrange(1,len(x_axis))]
     plt.plot(xaxis,dtime)
-    plt.title('Covid-19 Karnataka State Growth Rate')
+    plt.title('Covid-19 %s State Growth Rate'%state)
     plt.xlabel('Days')
     plt.xticks(xaxis,x_axis,rotation='vertical')
     plt.ylabel('Doubling Time in days')
